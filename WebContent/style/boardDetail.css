@@ -1,0 +1,300 @@
+:root {
+  --color-font: #ffffff;
+  --color-main: #3949ab;
+  --color-sub: #00227a;
+  --fontSize-Large: 50px;
+}
+* {
+	color: var(--color-font);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  background: var(--color-font);
+  color: var(--color-sub);
+}
+
+
+.clear {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#header {
+	background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+
+#header > span {
+  padding: 30px 0 30px 0;
+  font-size: var(--fontSize-Large);
+  font-weight: 600;
+}
+
+.loginInfo {
+	position: absolute;
+	height: 30px;
+	top: 85px;
+	right: 5%;
+	display: flex;
+}
+
+.joinBtn {
+	font-Weight: bold;
+	padding-right: 10px;
+}
+
+.loginBtn {
+	font-Weight: bold;
+}
+
+.welcomMsg {
+	padding-right: 20px;
+}
+
+input {
+	background: var(--color-main);
+}
+
+#nav {
+  width: 15%;
+  height: 800;
+  background: var(--color-main);
+  color: var(--color-font);
+}
+
+#menu {
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+#menu > li > a {
+  transition: transform 200ms ease-in;
+}
+
+#menu > li > a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+#content {
+  width: 85%;
+  height: 100%;
+  min-height: 800px;
+  background: #181818;
+}
+
+.contentWrap {
+	width: 95%;
+	height: 100%;
+	margin: 30px;
+}
+
+.conTitle {
+	width: 100%;
+	font-size: 30px;
+	text-align: center;
+	border: 1px solid var(--color-sub);
+	color: white;
+	background: var(--color-sub);
+}
+
+.conInfo {
+	display: flex;
+	font-size: 20px;
+	border: 1px solid var(--color-sub);
+	color: white;
+}
+
+.articleBtn {
+	display: flex;
+	justify-content: flex-start;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.conBody {
+	padding-top: 50px;
+	min-height: 350px;
+	text-align: center;
+	color: white;
+	border: 1px solid var(--color-sub);
+}
+
+.commentBox {
+	width: 100%;
+	/* height: 200px; */
+
+}
+
+.commentTitle {
+	background: var(--color-sub);
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.commentWriteArea {
+	color: black;
+	width: 100%;
+	height: 50px;
+}
+
+.commentButton {
+	width: 100%;
+}
+
+.cmtBtn {
+	height: 30px;
+	background: var(--color-sub);
+	transition: background 150ms ease-in;
+	color: white;
+	cursor: pointer;
+}
+
+.cmtBtn:hover {
+	background: orange;
+}
+
+.Target {
+	margin: 0;
+}
+
+.cmtModifyTextarea {
+	width: 100%;
+	color: black;
+}
+
+.comment {
+	display: flex;
+}
+.commentNick,
+.commentContent,
+.commentRegdate {
+	padding-top: 5px;
+	float: left;
+}
+
+.commentNick {
+	width: 15%;
+}
+.commentContent {
+	width: 65%;
+}
+.commentRegdate {
+	width: 20%;
+	text-align: right;
+}
+
+.commentDivider {
+	width: 100%;
+	background: var(--color-sub);
+	height: 1px;
+}
+
+.btnBox {
+	padding: 10px 0 10px 0;
+	display: flex;
+	justify-content: center;
+}
+
+
+.fa-caret-left,
+.fa-caret-right,
+.fa-list-alt {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+
+.listBtn:hover,
+.prevBtn:hover,
+.nextBtn:hover {
+	transform: scale(1.2);
+	
+}
+
+#footer {
+	background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+@media screen and (max-width: 1080px) {
+	#body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#nav {
+		width: 100%;
+		display: flex;
+		height: 100%;
+	}
+	
+	#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#menu > li {
+		padding: 0;
+	}
+	#content {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.contentWrap {
+		margin: 0;
+		padding-top: 40px;
+		width: 100%;
+	}
+	
+	.content {
+		height: 520px;
+	}
+	
+	.btnBox {
+		padding-top: 20px;
+	}
+}

@@ -1,0 +1,315 @@
+:root {
+  --color-font: #ffffff;
+  --color-main: #3949ab;
+  --color-sub: #00227a;
+  --fontSize-Large: 50px;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  background:var(--color-main);
+  color: var(--color-font);
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#header {
+  background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+
+#header > span {
+  padding: 30px 0 30px 0;
+  font-size: var(--fontSize-Large);
+  font-weight: 600;
+}
+
+
+.loginInfo {
+	position: absolute;
+	height: 30px;
+	top: 85px;
+	right: 5%;
+	display: flex;
+}
+
+.joinBtn {
+	font-Weight: bold;
+	padding-right: 10px;
+}
+
+.loginBtn {
+	font-Weight: bold;
+}
+
+.welcomMsg {
+	padding-right: 20px;
+}
+
+
+#nav {
+  width: 15%;
+  background: var(--color-main);
+  color: var(--color-font);
+}
+
+#menu {
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+#menu > li > a {
+  transition: transform 200ms ease-in;
+}
+
+#menu > li > a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+#content {
+  width: 85%;
+  height: 100%;
+  min-height: 800px;
+  background: #181818;
+}
+
+.noticeTop {
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	text-align: center;
+	border: 1px solid var(--color-main);
+	color: var(--color-font);
+	background: var(--color-main);
+	font-weight: bold;	
+}
+
+.noticeBottom {
+	width: 100%;
+}
+
+.noticeList {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid var(--color-main);
+}
+
+.title {
+	text-align: left;
+}
+
+
+.noticeList > a {
+	display: flex;
+}
+
+.noticeList > a:hover {
+	color: var(--color-font);
+	background: var(--color-main);
+	font-weight: bold;
+}
+
+.noticeTop > div:nth-child(1),
+.noticeList > a > div:nth-child(1){
+	width: 10%;
+}
+.noticeTop > div:nth-child(2),
+.noticeList > a > div:nth-child(2){
+	width: 60%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden; 
+}
+.noticeTop > div:nth-child(3),
+.noticeList > a > div:nth-child(3){
+	width: 10%;
+}
+.noticeTop > div:nth-child(4),
+.noticeList > a > div:nth-child(4){
+	width: 10%;
+}
+.noticeTop > div:nth-child(5),
+.noticeList > a > div:nth-child(5){
+	width: 10%;
+}
+
+.pager {
+	display: flex;
+}
+
+.pageNum {
+	font-size: 20px;
+	width: 100px;
+	display: flex;
+	flex: 1.1;
+	text-align: center;
+	padding: 10px;
+}
+
+.PageNumberBtn {
+	color: white;
+}
+
+.currentPage {
+	color: var(--color-font);
+}
+
+.btnWrap {
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.fa-caret-left,
+.fa-caret-right {
+	font-size: 30px;
+}
+
+.searchBox {
+	padding: 30px 0 30px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.fa-search {
+	font-size: 25px;
+	transition: transform 150ms ease-in;
+	cursor: pointer;
+}
+
+#footer {
+  background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1080px) {
+	#body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#nav {
+		width: 100%;
+		display: flex;
+		height: 100%;
+	}
+	
+	#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#menu > li {
+		padding: 0;
+	}
+	
+	#content {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	
+	.contentWrap {
+		margin: 0s;
+		width: 100%;
+	}
+	
+	.content {
+		height: 520px;
+	}
+	
+	.btnBox {
+		padding-top: 20px;
+	}
+	
+	.noticeList {
+		height: 100%;
+	}
+	.noticeList > a{
+		flex-wrap: wrap;	
+	}
+	
+	
+	.noticeBottom {
+		padding-top: 20px;
+	}
+	.noticeTop {
+		display: none;
+	}
+	
+	.noticeTop > div:nth-child(1),
+	.noticeList > a > div:nth-child(1){
+		width: 10%;
+		height: 50px;
+		line-height: 50px;
+	}
+	.noticeTop > div:nth-child(2),
+	.noticeList > a > div:nth-child(2){
+		width: 90%;
+		height: 50px;
+		line-height: 50px;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow: hidden; 
+	}
+	.noticeTop > div:nth-child(3),
+	.noticeList > a > div:nth-child(3){
+		width: 30%;
+		height: 50px;
+		line-height: 50px;
+	}
+	.noticeTop > div:nth-child(4),
+	.noticeList > a > div:nth-child(4){
+		width: 30%;
+		height: 50px;
+		line-height: 50px;
+	}
+	.noticeTop > div:nth-child(5),
+	.noticeList > a > div:nth-child(5){
+		width: 30%;
+		height: 50px;
+		line-height: 50px;
+	}
+		
+}

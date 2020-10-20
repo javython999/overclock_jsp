@@ -1,0 +1,270 @@
+:root {
+  --color-font: #ffffff;
+  --color-main: #3949ab;
+  --color-sub: #00227a;
+  --fontSize-Large: 50px;
+}
+
+* {
+  color: var(--color-font);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  background: var(--color-font);
+  color: var(--color-main);
+}
+
+
+.clear {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#header {
+  background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+
+#header > span {
+  padding: 30px 0 30px 0;
+  font-size: var(--fontSize-Large);
+  font-weight: 600;
+}
+
+.loginInfo {
+	position: absolute;
+	height: 30px;
+	top: 85px;
+	right: 5%;
+	display: flex;
+}
+
+.joinBtn {
+	font-Weight: bold;
+	padding-right: 10px;
+}
+
+.loginBtn {
+	font-Weight: bold;
+}
+
+.welcomMsg {
+	padding-right: 20px;
+}
+
+
+#nav {
+  width: 15%;
+  height: 800px;
+  background: var(--color-main);
+  color: var(--color-font);
+}
+
+#menu {
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+#menu > li > a {
+  transition: transform 200ms ease-in;
+}
+
+#menu > li > a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+#content {
+  width: 85%;
+  height: 100%;
+  min-height: 800px;
+  background: #181818;
+}
+
+.contentWrap {
+	width: 95%;
+	height: 80%;
+	margin: 30px;
+	border: 1px solid var(--color-main);
+}
+
+.cancleBtn,
+input,
+option,
+optgroup,
+.cpuSelector,
+.articleTitle {
+	color: black;
+}
+
+.conTitle {
+	width: 100%;
+	font-size: 15px;
+	text-align: left;
+	border: 1px solid var(--color-main);
+	color: black;
+	background: var(--color-main);
+}
+
+.conTitle > input {
+	width: 100%;
+}
+
+button {
+	color: black;
+}
+button > a {
+	color: black;
+}
+
+.conInfo {
+	display: flex;
+	font-size: 20px;
+	border: 1px solid var(--color-main);
+	color: black;
+}
+
+select {
+	color: black;
+}
+.file {
+	font-size: 20px;
+	background: var(--color-main);
+	color: var(--color-font);
+	
+}
+
+.fileLabel {
+	width: 100%;
+	text-align: center;
+	background: var(--color-main);
+	color: var(--color-font);
+}
+
+.fileLink {
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: var(--color-main);
+	border: 1px solid var(--color-main);
+	transition: transform 250ms ease-in;
+}
+
+.fileItem:hover {
+	transform: scale(1.1);
+}
+
+
+.conBody {
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.content {
+	color: black;
+	width: 100%;
+	height: 550px;
+	color: black;
+}
+
+
+.ck-editor__editable_inline {
+    min-height: 500px;
+}
+
+.btnBox {
+	display: flex;
+	border:none;
+	color: var(--color-font);
+	border-radius: 10px;	
+	cursor: pointer;
+}
+
+#footer {
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  background: var(--color-sub);
+}
+@media screen and (max-width: 1080px) {
+	#body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#content {
+		padding-top: 20px;
+	}
+	
+	#nav {
+		width: 100%;
+		display: flex;
+		height: 100%;
+	}
+	
+	#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#menu > li {
+		padding: 0;
+	}
+	
+	#content {
+		width: 100%;
+		margin: 0;
+	}
+	
+	.contentWrap {
+		margin: 0;
+		width: 100%;
+	}
+	
+	.content {
+		height: 520px;
+	}
+	
+	.btnBox {
+		padding-top: 20px;
+	}
+	
+}

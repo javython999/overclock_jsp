@@ -1,0 +1,394 @@
+:root {
+  --color-font: #ffffff;
+  --color-main: #3949ab;
+  --color-sub: #00227a;
+  --fontSize-Large: 50px;
+}
+
+* {
+  color: var(--color-font);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  background: var(--color-font);
+  color: var(--color-main);
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#header {
+  width: 100%;
+  height: 120px;
+  background: var(--color-sub);
+  color: var(--color-font);
+  line-height: 120px;
+  text-align: center;
+}
+
+#header > span {
+  padding: 30px 0 30px 0;
+  font-size: var(--fontSize-Large);
+  font-weight: 600;
+}
+
+.loginInfo {
+	position: absolute;
+	height: 30px;
+	top: 85px;
+	right: 5%;
+	display: flex;
+}
+
+.joinBtn {
+	font-Weight: bold;
+	padding-right: 10px;
+}
+
+.loginBtn {
+	font-Weight: bold;
+}
+
+
+.welcomMsg {
+	padding-right: 20px;
+}
+
+#nav {
+  width: 15%;
+  background: var(--color-main);
+  color: var(--color-font);
+}
+
+#menu {
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+#menu > li > a {
+  transition: transform 200ms ease-in;
+}
+
+#menu > li > a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+
+#content {
+  width: 85%;
+  height: 100%;
+  min-height: 800px;
+  background: #181818;
+  padding-bottom: 30px;
+}
+
+.indexNotice {
+	margin-top: 20px;
+	width: 95%;
+	height: 30%;
+	border: 1px solid var(--color-main);
+}
+
+.indexRAM,
+.indexCPU {
+	margin-top: 20px;
+	width: 95%;
+	height: 70;
+	border: 1px solid var(--color-main);
+}
+
+.indexMenuLabel {
+	width: 100%;
+	height: 30px;
+	display:flex;
+	background: var(--color-main);
+	color: var(--color-font);
+}
+
+.indexRamLabel,
+.indexCpuLabel {
+	width: 100%;
+	height: 30px;
+	display:flex;
+	background: var(--color-main);
+	color: var(--color-font);
+}
+
+.indexMenuLabel > div:nth-child(1),
+.notice > div:nth-child(1) {
+	width: 10%;
+}
+.indexMenuLabel > div:nth-child(2),
+.notice > div:nth-child(2) {
+	width: 60%;
+}
+.indexMenuLabel > div:nth-child(3)
+.notice > div:nth-child(3) {
+	width: 10%;
+}
+.indexMenuLabel > div:nth-child(4) 
+.notice > div:nth-child(4) {
+	width: 10%;
+}
+.indexMenuLabel > div:nth-child(5)
+.notice > div:nth-child(5) {
+	width: 10%;
+}
+
+.noticeList {
+	border-bottom: 1px solid var(--color-main); 
+}
+
+.notice {
+	display: flex;
+}
+
+
+.ramArticle,
+.cpuArticle {
+	border-bottom: 1px solid var(--color-main);
+}
+
+
+.ramArticleList > a,
+.cpuArticleList > a {
+	display: flex;
+	line-height: 70px;
+}
+
+.indexRamLabel > div:nth-child(1),
+.ramArticle > div:nth-child(1),
+.indexCpuLabel > div:nth-child(1),
+.cpuArticle > div:nth-child(1){
+	width: 10%;
+	text-align: center;
+}
+
+.indexRamLabel > div:nth-child(2),
+.ramArticle > div:nth-child(2),
+.indexCpuLabel > div:nth-child(2),
+.cpuArticle > div:nth-child(2){
+	width: 10%;
+}
+
+
+.indexRamLabel > div:nth-child(3),
+.ramArticle > div:nth-child(3),
+.indexCpuLabel > div:nth-child(3),
+.cpuArticle > div:nth-child(3){
+	width: 50%;
+}
+
+
+.indexRamLabel > div:nth-child(4),
+.ramArticle > div:nth-child(4),
+.indexCpuLabel > div:nth-child(4),
+.cpuArticle > div:nth-child(4){
+	width: 15%;
+}
+
+
+.indexRamLabel > div:nth-child(5),
+.ramArticle > div:nth-child(5),
+.indexCpuLabel > div:nth-child(5),
+.cpuArticle > div:nth-child(5){
+	width: 10%;
+}
+
+
+.indexRamLabel > div:nth-child(6),
+.ramArticle > div:nth-child(6),
+.indexCpuLabel > div:nth-child(6),
+.cpuArticle > div:nth-child(6){
+	width: 5%;
+}
+
+
+.thumbnailBox {
+	line-height: 50px;
+	margin-top: 10px;
+	transition: transform 200ms ease-in;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+}
+
+#footer {
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  background: var(--color-sub);
+  color: var(--color-font);
+  text-align: center;
+  line-height: 30px;
+}
+
+
+.notice:hover,
+.cpuArticle:hover,
+.ramArticle:hover {
+	background: var(--color-main);
+	color: var(--color-font);
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 1080px) {
+	#body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#content {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#nav {
+		width: 100%;
+		display: flex;
+		height: 100%;
+	}
+	
+	#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#menu > li {
+		padding: 0;
+	}
+	
+	
+	.notice {
+		display: flex;
+		flex-wrap: wrap;
+	}	
+	
+	.indexMenuLabel > div:nth-child(1),
+	.notice > div:nth-child(1) {
+		width: 10%;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+	}
+	.indexMenuLabel > div:nth-child(2),
+	.notice > div:nth-child(2) {
+		width: 90%;
+		height: 70px;
+		line-height: 70px;
+	}
+	.indexMenuLabel > div:nth-child(3)
+	.notice > div:nth-child(3) {
+		width: 40%;
+		height: 70px;
+		line-height: 70px;
+	}
+	.indexMenuLabel > div:nth-child(4) 
+	.notice > div:nth-child(4) {
+		width: 40%;
+		height: 70px;
+		line-height: 70px;
+	}
+	.indexMenuLabel > div:nth-child(5)
+	.notice > div:nth-child(5) {
+		width: 20%;
+		height: 70px;
+		line-height: 70px;
+	}
+	
+	.cpuArticle,
+	.ramArticle {
+		flex-wrap: wrap;
+	}
+	
+	
+	
+	
+	
+	.indexMenuLabel,
+	.indexCpuLabel,
+	.indexRamLabel {
+		display: none;
+	}
+	
+	.indexRamLabel > div:nth-child(1),
+	.ramArticle > div:nth-child(1),
+	.indexCpuLabel > div:nth-child(1),
+	.cpuArticle > div:nth-child(1){
+		width: 10%;
+		text-align: center;
+	}
+	
+
+	.indexRamLabel > div:nth-child(2),
+	.ramArticle > div:nth-child(2),
+	.indexCpuLabel > div:nth-child(2),
+	.cpuArticle > div:nth-child(2){
+		width: 20%;
+	}
+
+
+	.indexRamLabel > div:nth-child(3),
+	.ramArticle > div:nth-child(3),
+	.indexCpuLabel > div:nth-child(3),
+	.cpuArticle > div:nth-child(3){
+		width: 70%;
+	}
+
+
+	.indexRamLabel > div:nth-child(4),
+	.ramArticle > div:nth-child(4),
+	.indexCpuLabel > div:nth-child(4),
+	.cpuArticle > div:nth-child(4){
+		width: 40%;
+		text-align: center;
+	}
+
+
+	.indexRamLabel > div:nth-child(5),
+	.ramArticle > div:nth-child(5),
+	.indexCpuLabel > div:nth-child(5),
+	.cpuArticle > div:nth-child(5){
+		width: 30%;
+	}
+
+
+	.indexRamLabel > div:nth-child(6),
+	.ramArticle > div:nth-child(6),
+	.indexCpuLabel > div:nth-child(6),
+	.cpuArticle > div:nth-child(6){
+		width: 30%;
+	}
+	
+}

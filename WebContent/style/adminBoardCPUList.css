@@ -1,0 +1,419 @@
+:root {
+  --color-font: #ffffff;
+  --color-main: #3949ab;
+  --color-sub: #00227a;
+  --fontSize-Large: 50px;
+}
+
+* {
+	color: var(--color-font);
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+	background: var(--color-main);
+}
+
+select,
+option {
+	color: black;
+}
+
+
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+body {
+  background: var(--color-font);
+  color: var(--color-main);
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#header {
+	background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+}
+
+#header > span {
+  padding: 30px 0 30px 0;
+  font-size: var(--fontSize-Large);
+  font-weight: 600;
+}
+
+
+.loginInfo {
+	position: absolute;
+	height: 30px;
+	top: 85px;
+	right: 5%;
+	display: flex;
+}
+
+.joinBtn {
+	font-Weight: bold;
+	padding-right: 10px;
+}
+
+.loginBtn {
+	font-Weight: bold;
+}
+
+.welcomMsg {
+	padding-right: 20px;
+}
+
+
+#nav {
+  width: 15%;
+  height: 800px;
+  background: var(--color-main);
+  color: var(--color-font);
+}
+
+#menu {
+  font-size: 30px;
+  text-align: center;
+}
+
+#menu > li {
+  padding-top: 10px;
+}
+
+#menu > li > a {
+  transition: transform 200ms ease-in;
+}
+
+#menu > li > a:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+#content {
+  width: 85%;
+  height: 100%;
+  min-height: 800px;
+  background: #181818;
+}
+
+.boardTop {
+	width: 100%;
+	display: flex;
+	text-align: center;
+	color: var(--color-font);
+	background: var(--color-main);
+	font-weight: bold;	
+}
+
+.boardBottom {
+	width: 100%;
+}
+
+.boardList {
+	width: 100%;
+	height: 70px;
+	display: flex;
+	text-align: center;
+	border-bottom: 1px solid var(--color-main);
+	line-height: 70px;
+}
+
+.boardList > a {
+	width: 100%;
+}
+
+.boardList:hover {
+	background: var(--color-main);
+	color: var(--color-font);
+	font-weight: bold;
+}
+.boardList:hover > .thumbnailBox {
+	transform: scale(1.2);
+}
+.boardList:hover > .title {
+	font-size: 17px;
+}
+
+.thumbnailBox {
+	line-height: 50px;
+	margin-top: 10px;
+	transition: transform 200ms ease-in;
+}
+
+.thumbnail {
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.title {
+	text-align: left;
+	transition: font-size 200ms ease-in;
+}
+
+.fa-lock-open,
+.fa-trash-alt {
+	margin-right: 4px;
+}
+
+.boardList > a {
+	display: flex;
+}
+
+.boardList > a:hover {
+	color: var(--color-font);
+	background: var(--color-main);
+	height: 70px;	
+}
+
+.boardTop > div:nth-child(1),
+.boardList > div:nth-child(1){
+	width: 5%;
+}
+.boardTop > div:nth-child(2),
+.boardList > div:nth-child(2){
+	width: 15%;
+}
+.boardTop > div:nth-child(3),
+.boardList > div:nth-child(3){
+	width: 40%;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	overflow: hidden; 
+}
+.boardTop > div:nth-child(4),
+.boardList > div:nth-child(4){
+	width: 10%;
+}
+.boardTop > div:nth-child(5),
+.boardList > div:nth-child(5){
+	width: 10%;
+}
+.boardTop > div:nth-child(6),
+.boardList > div:nth-child(6){
+	width: 5%;
+}
+.boardTop > div:nth-child(7),
+.boardList > div:nth-child(7){
+	width: 5%;
+}
+.boardTop > div:nth-child(8),
+.boardList > div:nth-child(8){
+	width: 5%;
+}
+
+.adminMenu {
+	text-align: right;
+	padding: 10px 10px 0 0;
+}
+
+.pager {
+	padding-top:30px;
+	display: flex;
+}
+
+.pageNum {
+	font-size: 20px;
+	width: 100px;
+	display: flex;
+	flex: 1.1;
+	text-align: center;
+	padding: 10px;
+}
+
+.PageNumberBtn {
+	color: white;
+}
+
+.fa-caret-left,
+.fa-caret-right {
+	font-size: 30px;
+}
+
+.currentPage {
+	color: var(--color-main);
+}
+
+.btnWrap {
+	cursor: pointer;
+	flex: 1;
+	text-align: center;
+	padding: 10px;
+	
+}
+
+.writeBtn {
+	text-align: center;
+}
+
+.fa-pen-square {
+	font-size: 20px;
+	transition: transform 300ms ease-in;
+}
+
+.fa-pen-square:hover {
+	transform: scale(1.1);
+}
+
+.searchBox {
+	margin: 30px 0 30px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.searchBtn {
+	font-size: 18px;
+	border:none;
+	background: var(--color-main);
+	color: var(--color-font);
+	border-radius: 5px;
+	transition: transform 150ms ease-in;
+	cursor: pointer;
+}
+
+#footer {
+  background: var(--color-sub);
+  width: 100%;
+  height: 120px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+@media screen and (max-width: 1080px) {
+	#body {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#nav {
+		width: 100%;
+		display: flex;
+		height: 100%;
+	}
+	
+	#menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex: 1;
+		font-size: 20px;
+	}
+	
+	#menu > li {
+		padding: 0;
+	}
+	#content {
+		width: 100%;
+		padding-top: 20px;
+		margin: 0;
+	}
+	
+	.contentWrap {
+		margin: 0;
+		width: 100%;
+	}
+	
+	.content {
+		height: 520px;
+	}
+	
+	.boardTop {
+		display: none;
+	}
+	
+	.boardList {
+		height: 100%;
+		line-height: 100%;
+	}
+	
+	.boardId {
+		padding-top: 20px;
+	}
+	
+	.thumbnailBox {
+		padding-top: 0px;
+	}
+	
+	.title {
+		padding-top: 30px;
+	}
+	
+	.btnBox {
+		padding-top: 20px;
+	}
+	
+	.boardList {
+		flex-wrap: wrap;
+	}
+	
+	.boardList > a:hover {
+		color: var(--color-font);
+		background: var(--color-main);
+		height: 100%;	
+	}
+	
+	.boardTop > div:nth-child(1),
+	.boardList > div:nth-child(1){
+		width: 10%;
+	}
+	.boardTop > div:nth-child(2),
+	.boardList > div:nth-child(2){
+		width: 30%;
+	}
+	.boardTop > div:nth-child(3),
+	.boardList > div:nth-child(3){
+		width: 60%;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		overflow: hidden; 
+	}
+	.boardTop > div:nth-child(4),
+	.boardList > div:nth-child(4){
+		width: 20%;
+	}
+	.boardTop > div:nth-child(5),
+	.boardList > div:nth-child(5){
+		width: 20%;
+	}
+	.boardTop > div:nth-child(6),
+	.boardList > div:nth-child(6){
+		width: 20%;
+	}
+	.boardTop > div:nth-child(7),
+	.boardList > div:nth-child(7){
+		width: 20%;
+		line-height: 36px;
+	}
+	.boardTop > div:nth-child(8),
+	.boardList > div:nth-child(8){
+		width: 20%;
+		line-height: 36px;
+	}
+	
+	.nick, .regdate, .hit {
+		padding: 10px 0 10px 0;
+	}
+	
+}
